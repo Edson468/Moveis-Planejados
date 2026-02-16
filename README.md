@@ -225,7 +225,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 <div align="center">
 
-**Seu Nome**
+**Edson Carvalho**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edson-carvalho-213b051b1/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Edson468)
@@ -251,44 +251,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 </div>
 ```
-
----
-
-## ✅ Como Usar
-
-1. **Substitua as informações:**
-   - `SEU_USUARIO` → Seu usuário do GitHub
-   - `Seu Nome` → Seu nome completo
-   - `linkedin.com/in/seu-perfil` → Seu LinkedIn
-   - Links das redes sociais da empresa
-
-2. **Adicione screenshots** (opcional):
-   - Crie a pasta `public/screenshots/`
-   - Adicione imagens `desktop.png` e `mobile.png`
-
-3. **Crie o arquivo LICENSE** (opcional):
-   - Adicione uma licença MIT ou outra de sua preferência
-
----
-
-## 📝 Para Criar o Arquivo
-
-No terminal, na raiz do projeto:
-
-```bash
-# Crie o arquivo README.md
-notepad README.md
-
-# Ou use o VS Code
-code README.md
-```
-
-Cole todo o conteúdo acima, salve e faça o commit:
-
-```bash
-git add README.md
-git commit -m "Adiciona README completo"
-git push
-```
-
----
