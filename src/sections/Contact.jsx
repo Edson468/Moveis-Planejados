@@ -14,9 +14,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contato" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300 relative">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+    <section id="contato" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300 relative w-full overflow-hidden">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-700 w-full">
           <div className="grid md:grid-cols-2">
             
             {/* Lado Esquerdo - Info */}
@@ -37,7 +37,7 @@ export default function Contact() {
                   </div>
                   <div className="flex items-center gap-3">
                     <Calendar size={20} />
-                    <span>Seg - Sex: 08h às 17h e Sáb: 09h às 12h</span>
+                    <span>Seg - Sex: 09h às 18h</span>
                   </div>
                 </div>
 

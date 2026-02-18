@@ -5,6 +5,19 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
+  // Controla overflow do body quando menu mobile está aberto
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isMenuOpen]);
+
   // Carregar preferência do usuário
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -39,7 +52,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
-          {/* LOGO CLICÁVEL - Atualizado */}
+          {/* LOGO CLICÁVEL */}
           <a href="#" className="flex-shrink-0 flex items-center gap-2 group">
             <div className="w-10 h-10 bg-amber-600 rounded-lg flex items-center justify-center text-white font-bold text-xl group-hover:bg-amber-700 transition-colors">M</div>
             <span className="font-bold text-2xl tracking-tight text-gray-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-500 transition-colors">

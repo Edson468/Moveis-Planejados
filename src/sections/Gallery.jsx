@@ -37,13 +37,13 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="galeria" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="galeria" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <SectionTitle subtitle="Confira alguns de nossos projetos recentes entregues com excelência.">
           Nossos Projetos
         </SectionTitle>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {images.map((image, index) => (
             <motion.div 
               key={index}
@@ -52,12 +52,13 @@ export default function Gallery() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.02 }}
-              className="relative h-64 rounded-2xl overflow-hidden shadow-md group cursor-pointer"
+              className="relative h-64 rounded-2xl overflow-hidden shadow-md group cursor-pointer w-full"
             >
               <img 
                 src={image.src}
                 alt={image.alt} 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                style={{ maxWidth: '100%' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                 <span className="text-white font-medium">{image.title}</span>

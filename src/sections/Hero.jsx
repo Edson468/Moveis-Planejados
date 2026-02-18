@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-      <div className="absolute inset-0 z-0">
+    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden w-full">
+      <div className="absolute inset-0 z-0 w-full h-full">
         <img 
           src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop" 
           alt="Interior Design" 
           className="w-full h-full object-cover"
+          style={{ maxWidth: '100%' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent dark:from-gray-900 dark:via-gray-900/80"></div>
       </div>

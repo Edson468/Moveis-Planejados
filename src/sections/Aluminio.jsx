@@ -28,24 +28,25 @@ export default function Aluminio() {
   ];
 
   return (
-    <section id="aluminio" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="aluminio" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <SectionTitle subtitle="Soluções completas em esquadrias de alumínio para sua residência ou comércio.">
           Portas e Janelas em Alumínio
         </SectionTitle>
 
         {/* Imagem Principal - Workshop */}
-        <div className="mb-16">
+        <div className="mb-16 w-full overflow-hidden">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative h-80 md:h-96 rounded-3xl overflow-hidden shadow-2xl"
+            className="relative h-80 md:h-96 rounded-3xl overflow-hidden shadow-2xl w-full"
           >
             <img 
               src="https://media.istockphoto.com/id/2211621570/pt/foto/carpenter-walking-through-a-workshop-full-of-window-frames.webp?a=1&b=1&s=612x612&w=0&k=20&c=UB7k-VnPvn4kSTyjx6HQPz-QqER1np7mwDKJDCAn0CU=" 
               alt="Workshop de Janelas em Alumínio" 
               className="w-full h-full object-cover"
+              style={{ maxWidth: '100%' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             <div className="absolute bottom-8 left-8 text-white">
@@ -56,7 +57,7 @@ export default function Aluminio() {
         </div>
 
         {/* Benefícios */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 w-full">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
@@ -75,19 +76,20 @@ export default function Aluminio() {
           ))}
         </div>
 
-        {/* Tipos de Produtos - Com a segunda imagem em destaque */}
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Card 1 - Imagem do Cliente */}
+        {/* Tipos de Produtos */}
+        <div className="grid md:grid-cols-2 gap-8 w-full">
+          {/* Card 1 - Portas e Janelas */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="group relative h-80 rounded-2xl overflow-hidden shadow-lg cursor-pointer"
+            className="group relative h-80 rounded-2xl overflow-hidden shadow-lg cursor-pointer w-full"
           >
             <img 
               src="https://plus.unsplash.com/premium_photo-1711412120015-2b9243910324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGFzJTIwZSUyMGphbmVsYXMlMjBlbSUyMGFsdW1pbmlvfGVufDB8fDB8fHww" 
               alt="Portas e Janelas em Alumínio" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              style={{ maxWidth: '100%' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-6">
@@ -96,17 +98,18 @@ export default function Aluminio() {
             </div>
           </motion.div>
 
-          {/* Card 2 - Box para Banheiro (IMAGEM ATUALIZADA) */}
+          {/* Card 2 - Box para Banheiro */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="group relative h-80 rounded-2xl overflow-hidden shadow-lg cursor-pointer"
+            className="group relative h-80 rounded-2xl overflow-hidden shadow-lg cursor-pointer w-full"
           >
             <img 
               src="https://media.istockphoto.com/id/1024173540/pt/foto/concept-of-modern-decoration-design-of-bathroom-for-luxury-hotel-residential.webp?a=1&b=1&s=612x612&w=0&k=20&c=BF9zESYCFMTBzh52Stwt1iMB-z-lehekOHY31JkyXBA=" 
               alt="Box para Banheiro" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              style={{ maxWidth: '100%' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-6">
